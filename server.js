@@ -10,12 +10,12 @@ const router = require('./router');
 app.use(cors());
 app.use(express.json());
 
-const uri = 'mongodb+srv://esolution:Dhana@1992@esolution.l8jbzny.mongodb.net/?retryWrites=true&w=majority&appName=eSolution';
+const uri = 'mongodb://esolution:superadmin%401992@100.42.187.184:27017/users?authSource=users';
 
 const connect = async () => {
     try {
         await mongoose.connect(uri);
-        console.log('Connected!');        
+        console.log('Connected!');
     } catch (error) {
         console.log('MongoDB Error: ', error);
     }
