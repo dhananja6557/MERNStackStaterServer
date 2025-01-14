@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 
 const port = 3001;
-const host = 'localhost';
+const host = '127.0.0.1';
 const mongoose = require('mongoose');
 const router = require('./router');
 
@@ -27,4 +27,4 @@ const server = app.listen(port, host, () => {
     console.log(`Server running on port ${server.address().port}`);
 });
 
-app.use('./api', router);
+app.use('/api', router);
