@@ -10,7 +10,7 @@ const router = require('./router');
 app.use(cors());
 app.use(express.json());
 
-const uri = 'mongodb://esolution:superadmin%401992@100.42.187.184:27017/users?authSource=users';
+const uri = 'mongodb://esolution:superadmin%401992@100.42.187.184:27017/esolutionedulk?authSource=esolutionedulk';
 
 const connect = async () => {
     try {
